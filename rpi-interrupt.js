@@ -1,7 +1,7 @@
 var Gpio = require('onoff').Gpio
-var sensor_pin=25
+const sensor_pin=25
 // Export GPIO #18 as an interrupt, generating input.
-var interrupt_pin = new Gpio(sensor_pin, 'in', 'both'); 
+const interrupt_pin = new Gpio(sensor_pin, 'in', 'rising', {debounceTimeout: 10}); 
  
 console.log('Ready...');
 var val=0
