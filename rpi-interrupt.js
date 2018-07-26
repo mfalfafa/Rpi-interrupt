@@ -12,5 +12,5 @@ interrupt_pin.watch(function (err, value) {
  
     console.log('Data ' + value);
  
-    interrupt_pin.unexport(); // Unexport GPIO and free resources
+    // interrupt_pin.unexport(); // Unexport GPIO and free resources
 });
