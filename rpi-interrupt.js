@@ -11,7 +11,8 @@ interrupt_pin.watch(function (err, value) {
     if (err) throw err;
     // val=val+1;
     console.log('Data ' + value);
- 
+    val=val+value;
+ 	console.log('count '+ val);
     // To stop watch to the sensor pin
     // interrupt_pin.unexport(); // Unexport GPIO and free resources
 });
