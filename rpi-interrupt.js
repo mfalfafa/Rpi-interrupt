@@ -9,8 +9,8 @@ var val=0
 // The callback passed to watch will be called when the interrupt_pin on GPIO #25 is triggered by goods. 
 interrupt_pin.watch(function (err, value) {
     if (err) throw err;
-    val=val+1;
-    console.log('Data ' + val);
+    // val=val+1;
+    console.log('Data ' + value);
  
     // To stop watch to the sensor pin
     // interrupt_pin.unexport(); // Unexport GPIO and free resources
